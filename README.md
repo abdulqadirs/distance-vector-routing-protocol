@@ -65,7 +65,7 @@ float: cost
 For example:
 
 ```
-router-id = A
+router-id = 'A'
 neighbours = {'B' : 6.5 , 'F' : 2.2}
 ```
 
@@ -81,7 +81,7 @@ Each router uses three separate threads for listening (for receiving distance-ve
 
 Upon initialization, each router creates a
 distance-vector update packet and sends this packet to all direct neighbours.
-Upon receiving this distance-vector update packet, each neighbouring router will incorporate the provided information into its routing table. Each router periodically broadcasts the distance-vector update packet to its neighbours every 10 seconds.
+Upon receiving this distance-vector update packet, each neighbouring router will incorporate the provided information into its routing table. Each router periodically broadcasts the distance-vector update packet to its neighbours.
 
 
 On receiving distance-vector update packets from all other routers, a router builds up
